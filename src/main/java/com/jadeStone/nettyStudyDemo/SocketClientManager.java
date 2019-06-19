@@ -1,4 +1,4 @@
-package testwebc;
+package com.jadeStone.nettyStudyDemo;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -22,7 +22,7 @@ public class SocketClientManager {
     static ConcurrentHashMap<Integer, Session>[] clients = new ConcurrentHashMap[table_length];
     static {
         for (int i = 0; i < table_length; i ++) {
-            clients[i] = new ConcurrentHashMap<>();
+            clients[i] = new ConcurrentHashMap<Integer, Session>();
         }
         charset = Charset.forName("UTF-8");
     }

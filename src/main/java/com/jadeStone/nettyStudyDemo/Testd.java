@@ -1,4 +1,4 @@
-package testwebc;
+package com.jadeStone.nettyStudyDemo;
 
 public class Testd {
     public static void main(String[] args) {

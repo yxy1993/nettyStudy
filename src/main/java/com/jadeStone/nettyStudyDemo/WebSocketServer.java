@@ -1,4 +1,4 @@
-package testwebc;
+package com.jadeStone.nettyStudyDemo;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -17,7 +17,6 @@ import io.netty.handler.stream.ChunkedWriteHandler;
  *
  */
 public class WebSocketServer implements Runnable{
-		@Override
 		public void run() {
 			 /*
 			  * websocket端

@@ -1,4 +1,4 @@
-package testwebc;
+package com.jadeStone.nettyStudyDemo;
 
 import java.io.IOException;
 import java.io.OutputStream;

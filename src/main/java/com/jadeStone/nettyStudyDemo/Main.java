@@ -1,4 +1,4 @@
-package testwebc;
+package com.jadeStone.nettyStudyDemo;
 
 import io.netty.channel.ChannelHandlerContext;
 

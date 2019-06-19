@@ -1,4 +1,4 @@
-package testwebc;
+package com.jadeStone.nettyStudyDemo;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
@@ -86,7 +86,7 @@ public class ServerHandler extends ChannelInboundHandlerAdapter {
     static ConcurrentHashMap<Integer, Session>[] clients = new ConcurrentHashMap[table_length];
     static {
         for (int i = 0; i < table_length; i ++) {
-            clients[i] = new ConcurrentHashMap<>();
+            clients[i] = new ConcurrentHashMap<Integer, Session>();
         }
         charset = Charset.forName("UTF-8");
     }
